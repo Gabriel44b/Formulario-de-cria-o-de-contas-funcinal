@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bem vindo(a)</title>
+</head>
+<body>
+    <h1>Bem vindo(a) o sua conta foi criada com Suscesso</h1>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <script>
+        const circle = document.querySelector('.circle');
+        const moveCircle = () => {
+            const randomX = Math.random() * (window.innerWidth - 50);
+            const randomY = Math.random() * (window.innerHeight - 50);
+            circle.style.left = randomX + 'px';
+            circle.style.top = randomY + 'px';
+        };
+
+        setInterval(moveCircle, 2000); 
+    </script>
+</body>
+</html>
